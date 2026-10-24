@@ -19,7 +19,7 @@ Run these four checks in order:
   hit-target size)
 
 ### B. AI Slop Check
-Run the `ai-slop-check` skill criteria.
+Apply the [AI Slop Check criteria](ai-slop-check.md).
 
 ### C. Hierarchy & Rhythm Review
 - **Hierarchy**: primary/secondary/tertiary differentiation, 5-second test

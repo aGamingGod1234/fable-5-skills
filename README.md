@@ -4,7 +4,14 @@
 
 Built from Claude Fable 5's leaked system prompts (3,800+ lines verbatim), 72 Claude Code session traces, 953 chain-of-thought traces, and measured behavioral data across 382 sessions. 
 
+The verbatim files in `raw/` are incomplete excerpts with continuation
+placeholders. For complete local instructions, use the distilled `raw/FABLE.md`
+or the installable skills below.
+
 ## Install
+
+Requires Bash and the standard `cp` and `mkdir` commands (Linux, macOS, or WSL).
+Claude Code must be installed separately.
 
 ```bash
 git clone https://github.com/SoulSniper-V2/fable-5-skills.git
@@ -12,10 +19,27 @@ cd fable-5-skills
 bash install.sh
 ```
 
-Or copy individual skills:
+The installer creates `~/.claude/skills/` when needed and copies all 18 skills,
+including their supporting files. If you use a custom Claude Code configuration
+directory, run it with the same `CLAUDE_CONFIG_DIR`:
+
 ```bash
-cp -r fable-5-skills/skills/fable-core ~/.claude/skills/
-cp -r fable-5-skills/skills/fable-web-design ~/.claude/skills/
+CLAUDE_CONFIG_DIR="/path/to/claude-config" bash install.sh
+```
+
+Re-running updates files supplied by this repository. Back up any edits to those
+files first; unrelated skills and extra files are kept. If a required `SKILL.md`
+is missing, the installer stops before writing any skills.
+
+Open Claude Code and type `/fable-core` or `/fable-plan-mode` to verify discovery.
+See the [Claude Code skills documentation](https://code.claude.com/docs/en/skills)
+for invocation and supported skill locations.
+
+Or copy individual skills from inside the cloned repository:
+```bash
+mkdir -p "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/skills"
+cp -R skills/fable-core "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/skills/"
+cp -R skills/fable-web-design "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/skills/"
 ```
 
 Or tell Claude Code: "Install skills from https://github.com/SoulSniper-V2/fable-5-skills into my ~/.claude/skills/"
@@ -41,7 +65,7 @@ Or tell Claude Code: "Install skills from https://github.com/SoulSniper-V2/fable
 | `fable-subagent-orchestration` | Fresh-context verifiers, handoff template |
 | `fable-markdown-memory` | File-based lesson memory across sessions |
 | `fable-skill-refactorer` | Audit existing skills: guardrails vs compensation |
-| `fable-web-design` | 20-chapter design philosophy + 14 procedural skills + scroll-driven video |
+| `fable-web-design` | Condensed design reference + 15 procedural guides, including scroll-driven video |
 
 ## Principles
 

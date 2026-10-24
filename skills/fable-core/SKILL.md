@@ -6,7 +6,8 @@ description: >
   style, engineering principles, tool use philosophy, and action safety.
   Load for any coding or software engineering task where you want Fable 5
   proactivity and rigor. This is the entry point for all Fable behavior.
-version: "1.0"
+metadata:
+  version: "1.0"
 ---
 
 # FABLE Core — Behavioral System
@@ -101,6 +102,16 @@ encountering obstacles. Report outcomes faithfully.
 ## Mistakes
 
 Own them, fix them, stay on the problem. Maintain self-respect.
+
+## Supporting References
+
+Read these when the task needs the corresponding workflow:
+- [Autonomous operation](references/autonomous-operation.md) for unattended work
+- [Code review](references/code-review.md) for reviewing a diff or pull request
+- [Debugging](references/debugging.md) for reproducing and fixing a bug
+- [Multi-agent coordination](references/multi-agent.md) for delegating independent work
+- [Plan mode](references/plan-mode.md) for exploring and planning a change
+- [Behavioral examples](references/behavioral-examples.md) for concrete applications
 
 ## Ambition Calibration
 

@@ -4,7 +4,7 @@ description: >
   Design system for building polished, interactive websites. Loaded
   automatically when user asks for a website, landing page, portfolio,
   product page, interactive prototype, or any frontend work. Contains the
-  20-chapter design philosophy plus 14 procedural skills for the full
+  condensed design reference plus 15 procedural guides for the full
   design → prototype → polish pipeline. Explicitly rejects generic AI
   aesthetics (generic gradients, Inter-everywhere typography, emoji
   decoration, rounded-corner-with-left-border-accent as default).
@@ -40,14 +40,21 @@ Follow this sequence on every meaningful design request:
 - Redundant elements (headline + subheading + paragraph saying the same thing)
 
 ## Procedural Skills
-Load as needed for each phase:
-- **Discovery** → `skills/discovery-questions.md`
-- **Aesthetic Direction** → `skills/frontend-aesthetic-direction.md`
-- **Wireframe** → `skills/wireframe.md`
-- **Prototype** → `skills/make-a-prototype.md`
-- **AI Slop Check** → `skills/ai-slop-check.md`
-- **Polish Gate** → `skills/polish-pass.md`
-- **Scroll-Driven Video** → `skills/scroll-driven-video.md`
-- Plus: `hierarchy-rhythm-review`, `interaction-states-pass`,
-  `accessibility-audit`, `component-extract`, `design-system-extract`,
-  `generate-variations`, `make-a-deck`, `make-tweakable`
+For the full design workflow and context rules, read
+[the design reference](references/system-prompt.md).
+Load the supporting instructions as needed for each phase:
+- [Discovery](references/skills/discovery-questions.md)
+- [Aesthetic Direction](references/skills/frontend-aesthetic-direction.md)
+- [Wireframe](references/skills/wireframe.md)
+- [Prototype](references/skills/make-a-prototype.md)
+- [AI Slop Check](references/skills/ai-slop-check.md)
+- [Polish Gate](references/skills/polish-pass.md)
+- [Scroll-Driven Video](references/skills/scroll-driven-video.md)
+- [Hierarchy and Rhythm Review](references/skills/hierarchy-rhythm-review.md)
+- [Interaction States](references/skills/interaction-states-pass.md)
+- [Accessibility Audit](references/skills/accessibility-audit.md)
+- [Component Extraction](references/skills/component-extract.md)
+- [Design System Extraction](references/skills/design-system-extract.md)
+- [Design Variations](references/skills/generate-variations.md)
+- [Presentations](references/skills/make-a-deck.md)
+- [Tweakable Controls](references/skills/make-tweakable.md)
